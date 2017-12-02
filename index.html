@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>book-store</title>
+
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_455077_p0hhq0snxwf2bj4i.css">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <script>
+    (function () {
+      let calc = function () {
+        let docElement = document.documentElement;
+        let clientWidthValue = docElement.clientWidth > 640 ? 640 : docElement.clientWidth;
+        docElement.style.fontSize = 10 * (clientWidthValue / 640) + 'px';
+      };
+      calc();
+      window.addEventListener('resize', calc);
+      /* computed();
+       function computed() {
+       let deviceW = document.documentElement.clientWidth;
+       if (deviceW > 640) return;
+       document.documentElement.style.fontSize = deviceW / 640 * 10 + 'px';
+       }
+       window.addEventListener('resize', computed);*/
+    })();
+  </script>
+</head>
+<body>
+<div id="app"></div>
+</body>
+</html>
